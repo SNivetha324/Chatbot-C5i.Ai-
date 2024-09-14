@@ -1,0 +1,131 @@
+/* General chat layout */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 600px;
+    border-radius: 20px;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #66b3ff, #ffffff);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .chat-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to right, #0052cc, #00aaff);
+    color: white;
+  }
+  
+  .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .chat-details h2 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .chat-details p {
+    margin: 0;
+    font-size: 12px;
+  }
+  
+  .chat-body {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .quick-replies {
+    margin-top: 10px;
+  }
+  
+  .quick-replies button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  
+  .quick-replies button:hover {
+    background-color: #0056b3;
+  }
+  
+  .chat-footer {
+    padding: 10px;
+    background-color: #e9f7ff;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .rating {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  .input-area {
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-area input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+  }
+  
+  .input-area button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .input-area button:hover {
+    background-color: #003d80;
+  }
+  
+  .emoji-area {
+    margin-left: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .chat-body {
+    padding: 10px;
+    flex-grow: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start */
+  }
+  
+  .message {
+    width: fit-content;
+    max-width: 80%;
+    margin-bottom: 10px;
+  }
+  
+  .user-message {
+    align-self: flex-end; /* Align user messages to the end */
+  }
+  
+  .bot-message {
+    align-self: flex-start; /* Align bot messages to the start */
+  }
+  
